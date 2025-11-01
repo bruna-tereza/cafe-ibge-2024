@@ -4,7 +4,7 @@ import re
 import os
 
 input_file = '/home/brunatereza/cafe-ibge-2024/data/raw/Tabela 1613.xlsx'
-output_file = '/home/brunatereza/cafe-ibge-2024/data/processed/tabela_1613_municipios.csv'
+output_file = '/home/brunatereza/cafe-ibge-2024/data/processed/ibge_cafe_2024_processed.csv'
 
 df = pd.read_excel(input_file)
 df = df.replace('-', np.nan)
