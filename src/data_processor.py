@@ -7,7 +7,7 @@ input_file = '/home/brunatereza/cafe-ibge-2024/data/raw/Tabela 1613.xlsx'
 output_file = '/home/brunatereza/cafe-ibge-2024/data/processed/ibge_cafe_2024_processed.csv'
 
 df = pd.read_excel(input_file)
-df = df.replace('-', np.nan)
+df = df.replace('-',0)
 df = df[~(df.iloc[:, 1:] == '...').all(axis=1)]
 
 def split_municipio_uf(x):
